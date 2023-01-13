@@ -16,12 +16,12 @@ on:
 env:
   ROM_URL: https://bigota.d.miui.com/9.10.10/miui_HM5A_9.10.10_e70d9eb2a6_8.1.zip
   ROM_NAME: MIUI
-  BUILD_TYPE: Aonly
+  BUILD_TYPE: AB
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
