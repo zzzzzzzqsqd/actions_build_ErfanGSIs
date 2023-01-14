@@ -14,14 +14,14 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/9.10.10/miui_HM5A_9.10.10_e70d9eb2a6_8.1.zip
+  ROM_URL: https://7qqivgq3affgt7pqq427qt8ihcog4v1hbs8up87s98rkusdu2r5vulqa.qc.dolfincdnx.cn:38914/xdispatch70294a0675a1a842/bigota.d.miui.com/9.10.10/miui_HM5A_9.10.10_e70d9eb2a6_8.1.zip?bsreqid=d91d8d2193ffe8eacefcdc211d4d006f
   ROM_NAME: MIUI
-  BUILD_TYPE: AB
+  BUILD_TYPE: Aonly
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
